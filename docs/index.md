@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: Quick Start
-      link: /guide/
+      link: /guide/start/getting-started
     - theme: alt
       text: GitHub
       link: https://github.com/mzhujihui/CPage
