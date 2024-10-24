@@ -6,8 +6,13 @@
 		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"ignore": [".vscode/**/*", "node_modules/**/*", "dist/**/*"]
+		"ignoreUnknown": true,
+		"ignore": [
+			".vscode/**/*",
+			"node_modules/**/*",
+			"dist/**/*",
+			"src/routeTree.gen.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true,
