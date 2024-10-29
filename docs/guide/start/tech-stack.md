@@ -16,6 +16,15 @@ CPage 使用了一些社区中流行的库和开发工具
   [Tanstack Router](https://github.com/tanstack/router)
   React 路由方案，且围绕路由优化了 DX、性能、Server 等场景
 
+## CSS
+  [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
+  A utility-first CSS framework for rapid UI development.
+
+  [clsx](https://github.com/lukeed/clsx)
+  A tiny utility for constructing `className` strings conditionally.
+
+  [tailwind-merge](https://github.com/dcastil/tailwind-merge)
+  Merge Tailwind CSS classes without style conflicts
 
 ## 组件库
   [Semi Deaign](https://github.com/DouyinFE/semi-design)
