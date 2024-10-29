@@ -1,13 +1,22 @@
 import Logo from "@/assets/images/logo.svg?react";
-import { IconDoubleChevronLeft, IconKanban } from "@douyinfe/semi-icons";
-import { Icon, Nav } from "@douyinfe/semi-ui";
+
+import {
+	IconColorPalette,
+	IconDoubleChevronLeft,
+	IconKanban,
+} from "@douyinfe/semi-icons";
+import { Nav } from "@douyinfe/semi-ui";
 import type { OnSelectedData } from "@douyinfe/semi-ui/lib/es/navigation";
 import { useLocation, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
 const items = [
-	{ itemKey: "/dashboard", text: "仪表看板", icon: <IconKanban /> },
-	{ itemKey: "/test1", text: "活动管理", icon: <IconDoubleChevronLeft /> },
+	{ itemKey: "/dashboard", text: "仪表盘", icon: <IconKanban /> },
+	{
+		itemKey: "/visualization",
+		text: "数据可视化",
+		icon: <IconColorPalette />,
+	},
 	{
 		text: "任务平台",
 		icon: <IconDoubleChevronLeft />,
@@ -23,12 +32,15 @@ export default function LeftNav() {
 	const [selectedKeys, setSelectedKeys] = useState(["/"]);
 	const [openKeys, setOpenKeys] = useState<string[]>([]);
 
+	// @ts-ignore
 	const onOpenChange = (data) => {
+		console.log("openKeys", data.openKeys);
 		setOpenKeys([...data.openKeys]);
 	};
 
 	const onSelect = (data: OnSelectedData) => {
-		navigate({ to: data.selectedKeys[0] });
+		const to = data.selectedKeys?.[0] ? data.selectedKeys[0].toString() : "";
+		navigate({ to });
 	};
 
 	useEffect(() => {
