@@ -25,8 +25,8 @@ export default function HomeLayout({ children }) {
 					<HomeHeader />
 				</div>
 
-				<Content className="flex-1 px-4 mt-4" style={{ overflow: "auto" }}>
-					<div className="min-w-[1088px] h-full">{children}</div>
+				<Content className="flex-1 px-4 my-4" style={{ overflow: "auto" }}>
+					<div className="h-full">{children}</div>
 				</Content>
 			</Layout>
 		</Layout>

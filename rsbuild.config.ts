@@ -10,6 +10,7 @@ export default defineConfig({
 	source: {
 		alias: {
 			"@": "./src",
+			"@/constants": "./src/constants",
 		},
 	},
 	tools: {
