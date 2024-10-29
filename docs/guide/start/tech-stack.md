@@ -20,8 +20,18 @@ CPage 使用了一些社区中流行的库和开发工具
 ## 组件库
   [Semi Deaign](https://github.com/DouyinFE/semi-design)
   由抖音前端与 UED 团队维护，易于定制的现代化设计系统，帮助设计师与开发者打造高质量产品。
+  定制主题，前往[Semi 设计系统管理站点](https://semi.design/dsm/)
+
+## 规则
+[biome](https://github.com/biomejs/biome)
+Rust编写的JavaScript工具链，帮助开发者在项目中进行高性能的代码分析、格式化和转换。
 
 ## 其他
+ [svgr](https://react-svgr.com/)
+ 将 SVG 图片转换为 React 组件
+
  [es-toolkit](https://github.com/toss/es-toolkit)
  lodash 替代方案，更小，更快
+
+ 
 
