@@ -14,6 +14,7 @@ Start the dev server:
 
 ```bash
 pnpm dev
+pnpm docs:dev
 ```
 
 Build the app for production:
