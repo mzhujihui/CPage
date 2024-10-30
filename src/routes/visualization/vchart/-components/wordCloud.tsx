@@ -1,4 +1,5 @@
 import { VChart } from "@visactor/react-vchart";
+import type { VChartProps } from "@visactor/react-vchart";
 
 interface WordData {
 	text: string;
@@ -7,11 +8,10 @@ interface WordData {
 
 interface PropsType {
 	data: WordData[];
-	width?: number;
-	height?: number;
+	spec?: VChartProps["spec"];
 }
 
-function WordCloud({ data = [] }: PropsType) {
+function WordCloud({ data = [], spec }: PropsType) {
 	if (data.length === 0) return null;
 
 	return (
@@ -41,6 +41,7 @@ function WordCloud({ data = [] }: PropsType) {
 						fontSizeLimitMin: 0,
 					},
 				},
+				...spec,
 			}}
 		/>
 	);

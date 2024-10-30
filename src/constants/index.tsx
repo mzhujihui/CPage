@@ -1,8 +1,4 @@
-import {
-	IconColorPalette,
-	IconDoubleChevronLeft,
-	IconKanban,
-} from "@douyinfe/semi-icons";
+import { IconColorPalette, IconKanban } from "@douyinfe/semi-icons";
 import type { NavItems } from "@douyinfe/semi-ui/lib/es/navigation";
 
 export const navItems: NavItems = [
@@ -21,11 +17,5 @@ export const navItems: NavItems = [
 				text: "Nivo",
 			},
 		],
-	},
-	{
-		text: "任务平台",
-		icon: <IconDoubleChevronLeft />,
-		itemKey: "/test2",
-		items: ["任务管理", "用户任务查询"],
 	},
 ];
