@@ -14,6 +14,11 @@ module.exports = {
 		},
 		extend: {
 			colors: {
+				"semi-color-bg-0": "var(--semi-color-bg-0)",
+				"semi-color-bg-1": "var(--semi-color-bg-1)",
+				"semi-color-bg-2": "var(--semi-color-bg-2)",
+				"semi-color-bg-3": "var(--semi-color-bg-3)",
+				"semi-color-bg-4": "var(--semi-color-bg-4)",
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",

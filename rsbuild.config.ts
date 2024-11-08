@@ -10,7 +10,6 @@ export default defineConfig({
 	source: {
 		alias: {
 			"@": "./src",
-			"@/constants": "./src/constants",
 		},
 	},
 	tools: {
@@ -18,7 +17,7 @@ export default defineConfig({
 			plugins: [
 				TanStackRouterRspack(),
 				new SemiRspackPlugin({
-					theme: "@semi-bot/semi-theme-cpage",
+					theme: "@semi-bot/semi-theme-jianying",
 				}),
 			],
 		},

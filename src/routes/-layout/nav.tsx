@@ -1,6 +1,7 @@
 import Logo from "@/assets/images/logo.svg?react";
 
 import { navItems } from "@/constants";
+import { useCommonStore } from "@/store";
 import { Nav } from "@douyinfe/semi-ui";
 import type { OnSelectedData } from "@douyinfe/semi-ui/lib/es/navigation";
 import { useLocation, useNavigate } from "@tanstack/react-router";
@@ -9,6 +10,8 @@ import { useEffect, useState } from "react";
 export default function LeftNav() {
 	const location = useLocation();
 	const navigate = useNavigate();
+
+	const { isNavCollapsed, toggleNavCollapsed } = useCommonStore();
 
 	const [selectedKeys, setSelectedKeys] = useState(["/"]);
 	const [openKeys, setOpenKeys] = useState<string[]>([]);
@@ -45,9 +48,11 @@ export default function LeftNav() {
 				text: "CPage",
 				style: { paddingBottom: "0", paddingTop: "16px" },
 			}}
+			isCollapsed={isNavCollapsed}
 			footer={{
 				collapseButton: true,
 				collapseText: (collapsed) => (collapsed ? "展开" : "收起"),
+				onClick: toggleNavCollapsed,
 			}}
 			onSelect={onSelect}
 		/>

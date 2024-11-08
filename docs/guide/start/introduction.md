@@ -31,10 +31,10 @@ CPage 旨在通过提供一套完整的解决方案，帮助开发者：
 > 以上数据来自 [performance-compare](https://github.com/rspack-contrib/performance-compare) benchmark。
 
 ### 组件库
-使用 [Semi Design](https://semi.design/zh-CN/)、[shadcn](https://ui.shadcn.com/)、[magicui](https://magicui.design/) 等组件库，提供:
-  - 丰富的业务组件
-  - 可定制的主题系统
-  - 完善的设计系统
+- [Semi Design](https://semi.design/zh-CN/)，定制主题，前往[Semi 设计系统管理站点](https://semi.design/dsm/)
+- [Semi Icons](https://semi.design/zh-CN/basic/icon)，自定义图标见[SVGR](https://rsbuild.dev/zh/plugins/list/plugin-svgr)
+- [shadcn](https://ui.shadcn.com/)
+- [magicui](https://magicui.design/)
   
 ### 工具包
 - 使用 [es-toolkit](https://github.com/toss/es-toolkit) 替代 lodash，更小，更快

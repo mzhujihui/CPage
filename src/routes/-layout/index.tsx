@@ -1,21 +1,16 @@
 import { Layout } from "@douyinfe/semi-ui";
 
-import bg from "@/assets/images/bg.svg";
-
 import HomeHeader from "./header";
 import LeftNav from "./nav";
 
-export default function HomeLayout({ children }) {
+export default function HomeLayout({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
 	const { Sider, Content } = Layout;
 	return (
-		<Layout
-			className="h-[100vh] bg-no-repeat bg-cover bg-left-top"
-			style={{
-				backgroundColor: "#EFEFEF",
-				backgroundImage: `url("${bg}")`,
-				backgroundSize: "100% auto",
-			}}
-		>
+		<Layout className="h-[100vh] bg-semi-color-bg-0">
 			<Sider>
 				<LeftNav />
 			</Sider>

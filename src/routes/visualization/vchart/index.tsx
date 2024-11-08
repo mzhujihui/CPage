@@ -1,3 +1,4 @@
+import { MarkdownRender } from "@douyinfe/semi-ui";
 import { createFileRoute } from "@tanstack/react-router";
 import { WordCloud } from "./-components";
 

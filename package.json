@@ -23,9 +23,10 @@
 	},
 	"dependencies": {
 		"@douyinfe/semi-icons": "^2.68.3",
+		"@douyinfe/semi-icons-lab": "^2.68.4",
 		"@douyinfe/semi-ui": "^2.68.2",
 		"@radix-ui/react-icons": "^1.3.0",
-		"@semi-bot/semi-theme-cpage": "^1.0.2",
+		"@semi-bot/semi-theme-jianying": "^1.0.4",
 		"@tanstack/react-router": "^1.76.1",
 		"@tanstack/router-devtools": "^1.76.1",
 		"@visactor/react-vchart": "^1.12.9",
@@ -33,8 +34,10 @@
 		"clsx": "^2.1.1",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
+		"react-use": "^17.5.1",
 		"tailwind-merge": "^2.5.4",
-		"tailwindcss-animate": "^1.0.7"
+		"tailwindcss-animate": "^1.0.7",
+		"zustand": "^5.0.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
